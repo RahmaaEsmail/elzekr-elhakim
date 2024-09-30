@@ -1,0 +1,35 @@
+.setting_container {
+    padding: 10px 30px;
+}
+
+.accordion-header button {
+    /* gap: 950px; */
+    font-size: 25px !important;
+}
+
+.accordion-button::after  {
+    /* width: fit-content; */
+    /* margin-right: auto !important; */
+}
+
+.accordion-button::after  {
+    margin-left: 0px !important;
+    margin-right: auto !important;
+}
+
+.date_input input{
+    width: 20px;
+    height: 20px;
+    margin: auto 0px;
+  }
+  
+.date_input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date_input label {
+    margin: auto 0px;
+    font-size: 17px;
+}

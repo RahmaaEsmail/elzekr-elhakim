@@ -1,0 +1,91 @@
+.roquia_page {
+  background-color: #40404034;
+}
+
+.litanies_boxs {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-inline-start: 10px;
+  flex-wrap: wrap;
+}
+
+.litany_one {
+  position: relative;
+
+}
+
+.video_img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.show_video_img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  /* object-fit: contain; */
+}
+
+.sound_item {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.litany_one .img_audio {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.litanies_boxs>div {
+  width: 48%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.litanies_boxs>div .litany_one {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  background-color:#40404034;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* height: 300px; */
+  /* height: 420px; */
+}
+
+.litanies_boxs>div .litany_one.act {
+  height: fit-content;
+}
+
+.roquia_content>h5 {
+  color: var(--main-red-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width:767px) {
+  .litanies_boxs>div {
+    width: 100%;
+  }
+}
+
+/* .litanies_boxs */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0px;
+}
+
+.actions img {
+  width: 30px;
+  cursor: pointer;
+}

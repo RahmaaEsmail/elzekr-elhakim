@@ -1,0 +1,20 @@
+.date_input input{
+  width: 20px;
+  height: 20px;
+  margin: auto 0px;
+}
+
+.date_input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date_input label {
+    margin: auto 0px;
+    font-size: 17px;
+}
+
+.css-gtvk7x-MuiPickersMonth-monthButton.Mui-selected  {
+  background-color: var(--main-red-color);
+}

@@ -1,0 +1,37 @@
+.pray_timings_calender {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 900px;
+  max-width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 600px;
+  margin-bottom: 30px;
+  padding: 30px 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.pray_timings_calender .prayer_time {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.pray_timings_calender .MuiBox-root {
+  width: fit-content;
+}
+
+.pray_timings_calender header .MuiContainer-root {
+  padding: 0px 0px;
+}
+
+.pray_timings_calender .prayer_time>h5 {
+  padding-right: 40px;
+}
+
+.pray_timings_calender>div:nth-child(2) {
+  margin-top: 30px;
+}

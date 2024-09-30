@@ -1,0 +1,161 @@
+.card .img {
+  height: 320px;
+}
+
+.card .img img {
+  height: 100%;
+}
+
+.card .details {
+  padding: 10px;
+}
+
+.details h2 {
+  color: var(--main-red-color);
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mom_item {
+  color: #d39933;
+}
+
+
+.card .img {
+  height: 320px;
+}
+
+.card .img img {
+  height: 100%;
+}
+
+.card .details {
+  padding: 10px;
+}
+
+.details h2 {
+  color: #015792;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mom_item {
+  color: #d39933;
+}
+
+.khatma {
+  background-color: #f1f1f1;
+  width: 650px;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 60px;
+  transition: .3s all;
+}
+
+.khatma.show {
+  height: fit-content;
+}
+
+.khatma>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.khatma>div {
+  color: var(--main-red-color);
+}
+
+.khatma>div h5 {
+  margin: 0px;
+}
+
+.khatma>div svg {
+  cursor: pointer;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.inputs input {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+}
+
+.khatma_btn {
+  text-align: center;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.khatma_btn button {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid var(--main-red-color);
+}
+
+.inputs input {}
+
+.end_read,
+.start_read {
+  padding: 10px;
+  width: fit-content;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.end_read {
+  border: 1px solid var(--main-orange-color);
+  color: var(--main-orange-color);
+}
+
+.start_read {
+  border: 1px solid var(--main-red-color);
+  color: var(--main-red-color);
+}
+
+.read_done {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read_done * {
+  margin: 0px;
+}
+
+.rank {
+  background-color: #d3d3d3;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.delete_icon {
+  justify-content: start !important;
+  cursor: pointer;
+  width: fit-content;
+  align-items: center;
+}
+
+.delete_icon * {
+  margin: 0px;
+}
+
+.delete_icon span {
+  color: black;
+}

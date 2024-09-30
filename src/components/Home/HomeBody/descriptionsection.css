@@ -1,0 +1,251 @@
+.description_sec {
+  padding: 20px;
+}
+
+.description_sec {
+  padding: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.description_sec .right {
+  width: 500px;
+}
+
+.description_sec .right img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.description_sec .left {
+  width: 600px;
+}
+
+.description_sec .left img {
+  width: 100px;
+}
+
+.description_sec .left>h4 {
+  color: var(--main-red-color);
+  font-size: 32px;
+  font-weight: 800;
+  /* margin-bottom: 10px; */
+  display: flex;
+  gap: 0px;
+  align-items: center;
+}
+
+.description_sec .left>h4 img {
+  margin-top: 10px;
+  height: 70px;
+  /* width: 70px; */
+}
+
+.description_sec .left>h4 span {
+  margin-bottom: 5px;
+}
+
+.description_sec .left>p {
+  color: #9B102C;
+  /* color: var(--main-red-color); */
+  font-size: 19px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description_sec .left>div:first-of-type {
+  margin-bottom: 20px;
+}
+
+.description_sec .left>div:first-of-type p {
+  /* color: #015792; */
+  color :var(--main-red-color);
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.description_sec .left>div:first-of-type p:nth-of-type(2) {
+  text-align: left;
+}
+
+.description_sec .left .counts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 4fr));
+}
+
+.description_sec .left .counts .count_type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* height: 70px; */
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.description_sec .left .counts .count_type div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid var(--main-red-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description_sec .left .counts .count_type h4 {
+  color: var(--main-red-color);
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .description_sec .right {
+    width: 400px;
+  }
+
+  .description_sec .left {
+    width: 400px;
+    /* flex: 1; */
+  }
+}
+
+@media (max-width: 920px) {
+  .description_sec {
+    padding: 10px;
+  }
+
+  .description_sec .right {
+    width: 90%;
+  }
+
+  .description_sec .left {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 565px) {
+  .description_sec .right {
+    width: 100%;
+  }
+
+  .description_sec .left {
+    width: 100%;
+  }
+}
+
+.quoran_sec {
+  width: 100%;
+  min-height: 60vh;
+  /* margin-bottom: 40px; */
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  justify-content: center;
+  background-image: url("../../../../public/images/quorbg1.jpg");
+}
+
+.quoran_sec * {
+  color: white;
+}
+
+.quoran_sec .content {
+  z-index: 99;
+  position: relative;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.quoran_sec .content h5 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+.quoran_sec .content p {
+  font-size: 25px;
+  font-weight: 600px;
+  line-height: 1.5;
+  width: 500px;
+  max-width: 100%;
+  /* text-align: center; */
+}
+
+.quoran_sec .content a {
+  width: 164px;
+  background-color: var(--main-red-color);
+  color: white;
+  padding: 10px;
+  border: 4px solid var(--main-red-color);
+  margin: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+  /* display: block; */
+}
+
+.quoran_sec .content a:hover {
+  background: transparent;
+  color: white;
+}
+
+.quoran_sec::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.658);
+  height: 100%;
+  width: 100%;
+}
+
+.azkar_sec {
+  background-position-y: 0px;
+  background-image: url("../../../../public/images/Untitled\ design\ \(60\).png");
+}
+
+.azkar_sec .content a {
+  background-color: var(--main-red-color);
+  border: 4px solid var(--main-red-color);
+}
+
+.azkar_sec .content a:hover {}
+
+@media (max-width:565px) {
+
+  .quoran_sec .content p,
+  .quoran_sec .content h5 {
+    text-align: center;
+    max-width: 100%;
+    /* max-width: 82%; */
+    margin: auto;
+  }
+
+  .quoran_sec .content {
+    padding: 4px;
+  }
+}

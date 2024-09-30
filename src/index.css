@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+body {
+  margin: 0;
+}
+
+:root {
+  --main-red-color : #9B102C;
+  --main-orange-color :#E7AB28;
+  --main-primary-color: #373737;
+  --main-light-primary-color : #404040;
+}
+
+.higri_calendar_btn button {
+  background-color: var(--main-red-color) !important;
+}
+
+@font-face {
+  font-family: "Uthmani" !important;
+  src: url("../src/Uthmani\ Hafs\ Bold\ @Am9li9.ttf");
+}
+
+@font-face {
+  font-family: 'tajwal';
+  src: url("../src/tajwal/Tajawal-Medium.ttf");
+}
+
+@font-face {
+  font-family: "amiri";
+  src : url('../src/Amiri-Regular.ttf')
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "tajwal", sans-serif !important;
+  text-decoration: none !important;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+button {
+  font-family: "tajwal", sans-serif !important;
+  /* font-size: 22px !important; */
+}
+
+.quoran_surah_reader * {
+  font-family: "amiri" !important
+}
+
+.app * {
+  font-size: 22px ;
+
+}
+
+.description_sec .left>h4 {
+  align-items: end !important;
+  gap: 10px !important;
+  margin-bottom: 15px !important;
+}
+
+@media (max-width:565px) {
+
+  .css-1sqq6so-MuiContainer-root,
+  .css-1oqqzyl-MuiContainer-root {
+    padding-right: 0px !important;
+  }
+}
+
+.css-19lcvm2 {
+  z-index: 200 !important;
+}

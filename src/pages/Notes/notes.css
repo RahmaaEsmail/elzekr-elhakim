@@ -1,0 +1,258 @@
+.notes_page {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  background-color: #e1e8ea;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.notes_page .left {
+  width: 100%;
+}
+
+.notes_page .left>div {
+  display: grid;
+  gap: 20px;
+  cursor: pointer;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 3fr));
+}
+
+.ql-toolbar {
+  border-radius: 10px 10px 0px 0px;
+  /* display: none; */
+}
+
+.color_top {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+.notes .note .close {
+  /* position: absolute; */
+  /* top: 0px; */
+  color: white;
+  font-size: 32px;
+  text-align: left;
+  cursor: pointer;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  /* width: fit-content; */
+}
+
+.notes .note .close div {
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #157347;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.notes .note .close div * {
+  color: white;
+}
+
+.notes .note .title {
+  max-width: 100%;
+  /* max-width: 98%; */
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.notes .note .title textarea {
+  outline: none;
+  padding: 10px;
+  margin: 0px;
+  box-shadow: none;
+  border: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.notes_page .left>div>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.notes_page .left .add_plus {
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.notes_page .left .add_plus svg {
+  color: #0b5ed7;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.notes_page .left .add_plus span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b5ed7;
+}
+
+.notes_page .left>div>div .name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #45a2c4;
+  width: 80%;
+  overflow: hidden;
+}
+
+.notes_page .left>div>div .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notes_page .left>div>div .actions svg {
+  font-size: 42px;
+  cursor: pointer;
+}
+
+.notes_page .left>div>div .actions svg:first-of-type {
+  color: red;
+  /* color: #157347; */
+}
+
+.notes_page .left>div>div .actions svg:nth-of-type(2) {
+  cursor: pointer;
+  /* color: red; */
+
+}
+
+.notes_page .right {
+  width: 100%;
+  /* width: calc(100% - 500px); */
+}
+
+.notes_page {
+  padding: 30px;
+}
+
+.notes {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 3fr));
+}
+
+.notes .note {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+
+
+.notes .note .top {
+  border-bottom: 1px solid #ccc;
+}
+
+.notes .note input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  /* display: none; */
+  height: fit-content;
+}
+
+.notes .note label {
+  width: 100%;
+  min-height: 40px;
+  display: block;
+  height: fit-content;
+}
+
+/* .notes .note textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  height: 300px;
+  border-radius: 10px !important;
+} */
+
+.notes .note .top textarea {
+  height: 50px;
+  min-height: 100px;
+  max-height: fit-content;
+  outline: none;
+  resize: none;
+  box-shadow: none;
+  border-radius: 10px !important;
+  color: white;
+}
+
+.ql-container.ql-snow {
+  min-height: 300px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width:992px) {
+  .notes_page .left {
+    width: 100%;
+    /* order: -1; */
+  }
+
+  .notes_page .right {
+    width: 100%;
+  }
+
+  .notes {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+  }
+
+  .notes .note {
+    width: 100%;
+    background-color: white;
+  }
+
+  .notes_page .left>div:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 10px;
+    /* display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 4fr)); */
+  }
+}
+
+@media (max-width:565px) {
+  .notes_page {
+    padding: 10px;
+  }
+}
+
+.add_new_note {
+  background-color: #0b5ed7 !important;
+}

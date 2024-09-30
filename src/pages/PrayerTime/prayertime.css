@@ -1,0 +1,163 @@
+.prayer_time {
+  padding: 100px 20px;
+  /* text-align: center; */
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.prayer_time>h2 {
+  color: var(--main-red-color);
+}
+
+.prayer_time .countries_praiers {
+  margin-top: 30px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.prayer_time .countries_praiers>h4 {
+  color: var(--main-red-color);
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.prayer_time .countries_praiers select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.prayer_time .prays .one_pray {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.alkhitmat_container {
+  margin: 10px 0px;
+  border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   padding: 10px;
+}
+
+.khitma_content_container {
+  text-align: center !important;
+  /* background-color: red; */
+}
+
+.khitma_content {
+  display: flex;
+  padding: 0px 20px;
+  /* flex-direction: column; */
+  gap: 3px;
+  justify-content: space-between;
+}
+
+.khitma_content p {
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px !important;
+}
+
+.khitma_content input {
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 15px !important;
+  padding: 5px;
+}
+
+.khitma_content_container button {
+  margin: 10px auto !important;
+  border: 1px solid #f00;
+  color: black;
+  padding: 5px 10px;
+  /* margin: 10px 0px; */
+  border-radius: 5px;
+}
+
+.prayer_time_after_creation h4 ,
+.prayer_time_after_creation h3 {
+  font-weight: bold;
+  font-size: 23px !important;
+}
+
+.create_khitma_content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.create_khitma_content div{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.create_khitma_content div p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.create_khitma_content div button {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.create_khitma_content .start_btn {
+  border: 1.5px solid #f00;
+}
+
+.create_khitma_content .completed_btn {
+  border: 1px solid #d39933;
+}
+
+.wrapper {
+  /* border: 3px solid blue; */
+}
+
+.create_khitma_container .container {
+  /* padding: 0px !important; */
+  background-color: #ddd;
+  border-radius: 30px;
+  height: 20px;
+}
+
+.container .label {
+  background: transparent !important;
+}
+
+.barCompleted {
+  background-color: #015792 !important;
+  width: 80%;
+  border-radius: 30px;
+  height: 20px;
+}
+
+.label {
+  font-size: 20px;
+  /* color: green; */
+}
+
+.start_btn , 
+.completed_btn {
+  font-size: 18px !important;
+}
+
+@media (max-width:565px) {
+  .prayer_time {
+    padding: 100px 10px;
+  }
+}

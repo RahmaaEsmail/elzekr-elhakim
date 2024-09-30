@@ -1,0 +1,303 @@
+.electronic_rosary {
+  padding: 10px;
+  padding-top: 110px;
+}
+
+.electronic_rosary .texts {
+  margin-bottom: 40px;
+}
+
+.electronic_rosary .texts h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: var(--main-red-color);
+}
+
+.electronic_rosary .content {
+  /* display: grid; */
+  row-gap: 20px;
+  gap: 20px;
+  /* grid-template-columns: repeat(4,1fr); */
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 4fr)); */
+}
+
+.electronic_rosary .content .tasbih {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+}
+
+.content .tasbih>div {
+  padding: 10px;
+}
+
+.content .tasbih h4 {
+  text-align: center;
+  color: var(--main-red-color);
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.content .tasbih p {
+  color: #626262;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.content .tasbih .count {
+  height: 300px;
+  border-top: 1px solid #ccc;
+}
+
+.content .tasbih .count .number {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #015792;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.content .tasbih .count>div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .tasbih .count>div button {
+  background-color: #45a2c4;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.content .tasbih .reload {
+  background-color: #dc3545;
+  width: fit-content;
+  color: white;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tasbih_pop h4 {
+  color: #015792;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-align: center;
+  color: #015792;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.tasbih_pop p {
+  color: #626262;
+  font-size: 15px;
+  /* text-align: center; */
+  font-weight: 400;
+}
+
+.tasbih_pop .count {
+  height: 150px;
+  border-top: 1px solid #ccc;
+}
+
+.tasbih_pop .number {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #015792;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.tasbih_pop .reload {
+  background-color: #dc3545;
+  width: fit-content;
+  color: white;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tasbih_pop .count {
+  padding-top: 10px;
+}
+
+.tasbih_pop .count>div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasbih_pop .count>div button {
+  background-color: #45a2c4;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+/* .show_ros {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+} */
+
+.tasbih_adding {
+  background-color: white;
+  border-radius: 3px;
+  padding: 4px 20px;
+  margin: 10px 0px ;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.resoray_adding_form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.resoray_adding_form div label {
+  font-size: 16px;
+}
+
+.resoray_adding_form div {
+  width: 100%;
+}
+
+.resoray_adding_form input {
+  width: 100%;
+}
+
+.resoray_adding_form input::placeholder ,
+.resoray_adding_form textarea::placeholder {
+  font-size: 17px !important;
+}
+
+.tasbih_data_content {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.progress-circle-2 {
+  /* position: absolute; */
+  min-width: 100px !important;
+  height: 100px !important;
+  /* left: -28px; */
+}
+.circle-2::before {
+  content: '';
+  border: 4px solid #01589239;
+  /* border: 4px solid rgb(227,204,236); */
+  position: absolute;
+  width: 92%;
+  z-index: -1;
+  height: 95%;
+  border-radius: 50%;
+}
+.circle-2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  /* background-color: #f0e7f7; */
+  position: relative;
+  /* background-image: conic-gradient(#FE8D2A 0% 60%, transparent 0%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s background-image ease-in-out;
+}
+.circle-inner-2::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  /* color: #015792; */
+  border: 3px solid #01589210;
+  /* border: 3px solid #F3EDF5; */
+  /* background: black; */
+  position: absolute;
+  border-radius: 100%;
+  z-index: 100 !important;
+}
+.circle-inner-2 {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.circle-text-2 {
+  text-align: center;
+}
+
+.circle-text-2 .number-2 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #015792 !important;
+}
+
+.circle-text-2 .label-2 {
+  display: block;
+  font-size: 14px;
+  color: black !important;
+}
+
+.circle-text-2 .sub-label-2 {
+  display: block;
+  font-size: 10px;
+  color: #555555 !important;
+}
+
+.electronic_refresh_data {
+  top: 40px;
+  right: 0px;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 999;
+}
+
+.electronic_refresh_data p {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: black !important;
+  white-space: nowrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.electronic_refresh_data p span {
+  font-size: 16px !important;
+}

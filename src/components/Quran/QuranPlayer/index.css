@@ -1,0 +1,68 @@
+.quoran_surah_reader {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+
+.quoran_surah_reader .sura_content {
+  width: 45%;
+  /* position: sticky; */
+  top: 100px;
+}
+
+.quoran_surah_reader .readers {
+  width: 27%;
+  position: sticky;
+  top: 100px;
+  height: 500px;
+  overflow-y: auto;
+  /* position: sticky; */
+  /* top: 80px; */
+}
+
+.quoran_surah_reader .readers>h5 {
+  font-size: 22px;
+  text-align: center;
+  color: #072652;
+}
+
+.quoran_surah_reader .suars {
+  width: 27%;
+  /* position: fixed; */
+  position: sticky;
+  top: 100px;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.quoran_surah_reader .suars>div {
+  display: flex;
+}
+
+.surah_name.active {
+  color: white;
+}
+
+@media (max-width:992px) {
+  .quoran_surah_reader .readers {
+    display: none;
+  }
+
+  .quoran_surah_reader .suars {
+    display: none;
+  }
+
+  .quoran_surah_reader .sura_content {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width:767px) {
+  .quoran_surah_reader .sura_content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,277 @@
+.roquia_page {
+  padding: 20px;
+  background-color: #40404034;
+}
+
+.roquia_page .roquia_content {
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.roquia_content .filters {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 4fr));
+  margin-bottom: 30px;
+}
+
+.roquia_content .filters .roquia_type {
+  background-color: #f1f1f1;
+  color: var(--main-red-color);
+  font-weight: 500;
+  font-size: 19px;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--main-red-color);
+  transition: .3s all;
+}
+
+.roquia_content .filters .roquia_type.active {
+  background-color: var(--main-red-color);
+  color: white;
+  position: relative;
+}
+
+.roquia_content .filters .roquia_type.active::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: var(--main-orange-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.roquia_content .filters .roquia_type:hover {
+  color: white;
+  background-color: var(--main-red-color);
+}
+
+.roquia_content .filters .roquia_type.active:hover {
+  background-color: #e1e8ea;
+  color: var(--main-red-color);
+}
+
+.roquies {
+  width: 700px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.roquies .roquia_one {
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+
+.roquies .roquia {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.roquies .roquia .right {
+  width: 150px;
+  position: relative;
+}
+
+.roquies .roquia .right .det_img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.makeStyles-iconContainer-51 {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.makeStyles-container-49 {
+  color: #000;
+  height: auto;
+  outline: none;
+  padding: 0px !important;
+  position: relative;
+  max-width: 568px;
+  min-width: 20px !important;
+  background: white;
+}
+
+.makeStyles-copyContainer-53 {}
+
+.roquies .roquia .left {
+  padding: 10px;
+  flex: 1;
+}
+
+.roquies .roquia .right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.roquies .roquia .left .img_actions {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: 40px;
+}
+
+.roquies .roquia .left img {
+  width: 40px;
+  margin-bottom: 10px;
+  /* position: absolute; */
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.roquies .roquia .left h3 {
+  color: #000;
+  /* color: var(--main-red-color); */
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.roquies .roquia .left h5 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.roquies .roquia .left h5 span:first-of-type {
+  color: var(--main-red-color);
+}
+
+.roquies .roquia .left h5 span:nth-of-type(2) {
+  color: #636363;
+}
+
+.roquia .video_sound {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video {
+  padding: 10px;
+}
+
+.video iframe {
+  border-radius: 10px;
+}
+
+@media (max-width:600px) {
+  .roquies .roquia {
+    flex-direction: column;
+  }
+
+  .roquies .roquia .right {
+    width: 100%;
+  }
+
+  .roquies .roquia {
+    border-radius: none;
+    border: none !important;
+  }
+
+  .roquies .roquia_one {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.makeStyles-copyContainer-21 {
+  display: none !important;
+  color: #263238;
+  width: 100%;
+  border: 1px solid grey;
+  cursor: text;
+  display: inline-flex;
+  padding: 14px;
+  position: relative;
+  font-size: 14px;
+  background: black;
+  box-sizing: border-box;
+  font-style: normal;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  border-radius: 4px;
+  letter-spacing: -0.05px;
+}
+
+.makeStyles-container-17 {
+  color: #000;
+  height: auto;
+  outline: none;
+  padding: 0px !important;
+  position: relative;
+  max-width: 568px;
+  min-width: 30px !important;
+  background: white;
+}
+
+.makeStyles-iconContainer-19 {
+  text-align: left;
+  padding-top: 0px !important;
+  padding-bottom: 15px;
+}
+
+.makeStyles-copyContainer-29 {
+  color: #263238;
+  width: 100%;
+  border: 1px solid grey;
+  cursor: text;
+  display: inline-flex;
+  padding: 14px;
+  position: relative;
+  font-size: 14px;
+  background: black;
+  box-sizing: border-box;
+  font-style: normal;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  border-radius: 4px;
+  letter-spacing: -0.05px;
+  display: none !important;
+}
+
+.makeStyles-container-25 {
+  color: #000;
+  height: auto;
+  outline: none;
+  padding: 0px !important;
+  position: relative;
+  max-width: 568px;
+  min-width: 20px !important;
+  height: fit-content !important;
+  background: white;
+}
+
+.makeStyles-iconContainer-27 {
+  padding: 0px !important;
+
+}
+
+.makeStyles-iconContainer-27 button {
+  margin: 0px !important;
+  margin-bottom: 10px !important;
+
+}

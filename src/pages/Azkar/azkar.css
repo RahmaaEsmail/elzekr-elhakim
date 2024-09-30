@@ -1,0 +1,265 @@
+.azkar_page {
+  padding: 30px;
+  background-color: #40404034;
+}
+
+.azkar_page .azkar_types {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(auto, 4fr)); */
+}
+
+.azkar_page .azkar_types .azk_type_one {
+  background-color: var(--main-red-color);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.azkar_page .azkar_types .azk_type_one.act {
+  color: var(--main-red-color);
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.selected_data>h5 {
+  color: white;
+  background-color: var(--main-red-color);
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.selected_data .azkar_one {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 10px;
+}
+
+
+.selected_data .azkar_one .right {
+  background-color: var(--main-red-color);
+  color: white;
+  padding: 10px;
+  width: 120px;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selected_data .azkar_one .right h3 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.selected_data .azkar_one .right h5 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 400;
+  text-align: center;
+  opacity: .3;
+}
+
+.selected_data .azkar_one .right .ref {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+}
+
+.selected_data .azkar_one .left {
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.selected_data .azkar_one .left h5 {
+  color: #49a2c4;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.selected_data .azkar_one .left p {
+  color: #525252;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.selected_data .azkar_one .left p span:nth-of-type(2) {
+  color: #b4bcc2;
+  margin-right: 10px;
+}
+
+.selected_data .azkar_one .left h6 {
+  color: #015792;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+.azkar_swiper{
+  width: 800px;
+  background-color: #FFF;
+  /* padding: 30px; */
+  margin-inline: auto;
+  border-radius:  30px;
+overflow: hidden;
+}
+
+
+.swiper_azkar_one{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper_zekr_content{
+  padding: 20px 70px;
+}
+
+.azkar_type_btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  color: var(--main-red-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.azkar_type_btn.active{
+  background-color: var(--main-red-color);
+  color: #FFF;
+}
+
+
+.azkar_swiper .zekr_counter_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+  background-color: var(--main-red-color);
+  padding: 20px 40px;
+
+}
+
+
+.azkar_swiper .zekr_counter_container > *{
+  color: #FFF;
+  font-size: 40px;
+}
+
+
+
+.swiper_zerkr_content{
+  font-size: 20px;
+}
+
+
+
+
+@media (max-width:565px) {
+  .selected_data .azkar_one {
+    flex-direction: column;
+    
+  }
+  
+
+  .selected_data .azkar_one .right {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .selected_data .azkar_one .right h3 {
+    margin: 0px;
+  }
+
+  .selected_data .azkar_one .right h5 {
+    margin: 0px;
+  }
+
+  .selected_data .azkar_one .left {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .azkar_swiper{
+    width: 100%;
+    height: 326px !important;
+
+  }
+  .swiper_zekr_content{
+    padding: 10px 20px;
+  }
+}
+
+
+
+  
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Your styles here */
+  .azkar_swiper{
+    width: 100%;
+    background-color: #FFF;
+
+  }
+  .swiper_zekr_content{
+    padding: 10px 20px;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your styles here */
+  .azkar_swiper{
+    width: 100%;
+    background-color: #FFF;
+
+  }
+  .swiper_zekr_content{
+    padding: 10px 20px;
+  }
+
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your styles here */
+  .azkar_swiper{
+    width: 100%;
+    background-color: #FFF;
+
+  }
+  .swiper_zekr_content{
+    padding: 10px 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your styles here */
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your styles here */
+}

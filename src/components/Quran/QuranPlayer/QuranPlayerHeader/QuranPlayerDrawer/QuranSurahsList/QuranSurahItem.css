@@ -1,0 +1,76 @@
+ .other_info.active .MuiTypography-body1 {
+   color: #92d5e1;
+ }
+
+ .other_info.active .MuiTypography-body2 {
+   color: #f8e099;
+ }
+
+ .MuiListItemButton-root:hover {
+   background-color: var(--main-red-color) !important;
+ }
+
+ .other_info.active .MuiTypography-body1 {
+   color: black;
+   /* color: green; */
+ }
+
+ .MuiListItemButton-root:hover .surah_name {
+   color: white;
+ }
+
+ .MuiListItemButton-root:hover .MuiTypography-body1 {
+   color: white;
+ }
+
+ /* .MuiListItemButton-root:hover .MuiTypography-body1 */
+
+ .MuiListItemButton-root .MuiTypography-body2 {
+   color: var(--main-orange-color);
+ }
+
+ .reader_number {
+   width: 30px !important;
+   height: 30px !important;
+   border-radius: 50%;
+   background-color: #9b102cb0;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+ }
+
+ .MuiListItemButton-root:hover .reader_number {
+   background-color: white;
+   color: var(--main-red-color);
+ } 
+
+ .css-cveggr-MuiListItemIcon-root.reader_number {
+   width: 27px !important;
+   height: 27px !important;
+   min-width: 20px;
+   background-color: var(--main-red-color);
+   color: white;
+ }
+
+ .name.active {
+  color:white;
+   /* color: #92d5e1; */
+   /* text-align: start !important; */
+ }
+
+ .name {
+   text-align: start;
+   /* margin: 0px; */
+ }
+
+ .readers .MuiButtonBase-root {
+   gap: 9px;
+   /* align-items: start; */
+ }
+
+ .close_btn {
+   background-color: red;
+
+ }

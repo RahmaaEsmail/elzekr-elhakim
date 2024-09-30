@@ -1,0 +1,50 @@
+.roquia_details_page {
+  min-height: 100vh;
+  padding: 10px;
+  background-color: #40404034;
+}
+
+.roquia_details {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.roquia_details .img_reader,
+.roquia_details .img_reader img {
+  width: 100%;
+}
+
+.roquia_details .img_reader {
+  margin-bottom: 10px;
+}
+
+.roquia_details h4 {
+  text-align: center;
+  color: var(--main-red-color);
+}
+
+.roquia_details h5 {
+  color: #444;
+}
+
+.target_social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.target_social h2 {
+  color: #49a2c4;
+}
+
+.target_social * {
+  padding: 0px !important;
+}
+
+.target_social>div>div:nth-of-type(2) {
+  display: none !important;
+}

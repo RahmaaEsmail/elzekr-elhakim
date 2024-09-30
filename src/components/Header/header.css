@@ -1,0 +1,186 @@
+.header {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 70px;
+  z-index: 9999;
+  background-color: #fff;
+  padding: 10px 80px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.header .header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header_content * {
+  margin: 0px;
+}
+
+
+.header .header_content button {
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+.header .header_content svg {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--main-red-color);
+  cursor: pointer;
+}
+
+.big_links_parent {
+  background-color: rgba(0, 0, 0, 0.246);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.big_links_parent .big_links_hide {
+  width: calc(100% - 300px);
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+}
+
+.big_link {
+  background-color: white;
+  width: 100%;
+  color: black;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 300px;
+  top: -1px;
+  z-index: 999999999999999 !important;
+  padding: 10px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.css-mmdahl {
+  padding: 0 !important;
+}
+
+.big_link * {
+  color: black;
+}
+
+.big_link button {
+  color: #015792;
+  font-weight: 600;
+  font-size: 22px;
+  transition: 0.3s all ease-in-out;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.big_link button:hover {
+  background-color: #49a2c4;
+  color: white;
+}
+
+.logo a.sm-desktop-header button {
+  color: black !important;
+  font-weight: 900;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: black !important;
+  gap: 9px;
+}
+
+.big_link .sm-desktop-header {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .big_link .sm-desktop-header {
+    display: flex !important;
+  }
+
+  .logo a.sm-desktop-header {
+    display: none !important;
+  }
+}
+
+@media (max-width:565px) {
+  .header {
+    padding: 14px 20px;
+  }
+}
+
+.small_logo {
+  display: none;
+}
+
+@media (max-width:900px) {
+  .small_logo {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* .islamic_pat {
+  width: 60px;
+  height: 55px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: fixed;
+  z-index: 33;
+  bottom: 20px;
+  right: 10px;
+  margin-right: 14px !important;
+  background-image: url("../../../public/images/islmic_patenn.png");
+} */
+.islamic_pat {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50% !important;
+  font-size: 20px !important;
+
+}
+
+.big_link button:hover {
+  background-color: var(--main-red-color) !important;
+  color: white !important; 
+}
+
+.big_link button {
+  color: var(--main-red-color) !important;
+}

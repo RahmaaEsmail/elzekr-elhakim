@@ -1,0 +1,116 @@
+.sounds_page {
+  padding: 20px;
+}
+
+.sounds_page>div>h4 {
+  text-align: center;
+  color: var(--main-red-color);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+audio {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+audio:focus {
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+}
+
+.explains {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.sounds_page .explain_div {
+  margin-bottom: 20px;
+  width: 48%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sounds_page .explain_div h3 {
+  color: var(--main-red-color);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.det_mor {
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+
+
+.sounds_page .explain_div span:first-of-type {
+  /* color: #626262; */
+  /* font-size: 17px; */
+  /* margin-bottom: 19px; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* display: -webkit-box; */
+  /* -webkit-line-clamp: 2; */
+  /* -webkit-box-orient: vertical; */
+}
+
+.det_mor span:nth-child(2) {
+  /* display: block; */
+  cursor: pointer;
+}
+
+.how_more {
+  display: block;
+  margin: auto;
+  background-color: #45a2c4;
+  color: white;
+  padding: 9px;
+  border-radius: 4px;
+}
+
+.des p {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@media (max-width:767px) {
+  .sounds_page .explain_div {
+    width: 90%;
+    margin: auto;
+    margin-right: 10%;
+    margin: 0px;
+  }
+
+  .sounds_page {
+    padding: 0px;
+  }
+}
+
+.gradient {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 70%);
+  bottom: -15px;
+  height: 40px;
+  position: absolute;
+  right: 15px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  width: 100%;
+  /* background-color: red; */
+  width: calc(100% - 30px);
+}

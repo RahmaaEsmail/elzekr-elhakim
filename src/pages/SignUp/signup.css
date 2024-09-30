@@ -1,0 +1,267 @@
+.sign_up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 10px;
+}
+
+.sign_up .sign_up_content {
+  display: flex;
+  align-items: stretch;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 4px 14px;
+  width: 900px;
+  max-width: 98%;
+  background-color: #45a2c4;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.sign_up .sign_up_content .right {
+  padding: 20px;
+  background-color: #45a2c4;
+  width: 45%;
+}
+
+.sign_up .sign_up_content .right * {
+  color: white;
+}
+
+.sign_up .sign_up_content .right img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sign_up .sign_up_content .left {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 52%;
+  border-radius: 0px 20px 20px 0px;
+  background-color: white;
+}
+
+.sign_up .sign_up_content .right h5 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.sign_up .sign_up_content .right h6 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.sign_up .sign_up_content .right p {
+  color: #f1f1f1;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 17px;
+}
+
+.sign_up .sign_up_content .right img {
+  margin: auto;
+  display: block;
+}
+
+.sign_up .sign_up_content .left h5 {
+  color: #45a2c4;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.sign_up .sign_up_content .left form div {
+  width: 100%;
+  position: relative;
+}
+
+.sign_up .sign_up_content .left form div label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.sign_up .sign_up_content .left form div input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.sign_up .sign_up_content .left form div:first-of-type svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.sign_up .sign_up_content .left form button {
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: #45a2c4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  border: 3px solid transparent;
+  transition: .3s all ease-in-out;
+}
+
+.sign_up .sign_up_content .left form button:hover {
+  border-color: #45a2c4;
+  background-color: transparent;
+  color: #45a2c4;
+}
+
+.show_other_ways {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.show_other_ways hr {
+  width: 100px;
+}
+
+.other_ways_to_sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.other_ways_to_sign img,
+.other_ways_to_sign div {
+  width: 40px !important;
+  cursor: pointer;
+}
+
+.have_account {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.have_account span:nth-of-type(2) {
+  color: #45a2c4;
+  cursor: pointer;
+  font-weight: 800px;
+  font-size: 17px;
+}
+
+.sign_loading {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_loading svg {
+  margin: auto;
+  /* display: block; */
+  height: 20px !important;
+  position: relative !important;
+}
+
+@media (max-width:767px) {
+
+  .sign_up .sign_up_content .left,
+  .sign_up .sign_up_content .right {
+    width: 100%;
+  }
+
+  .sign_up .sign_up_content .right img {
+    width: 100%;
+    height: 200px;
+    /* object-fit: cover; */
+  }
+
+  .sign_up .sign_up_content .left {
+    /* padding: 10px; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+}
+
+.forget_pass {
+  color: #45a2c4;
+  font-weight: 900;
+  font-size: 22px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.check_code {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width:565px) {
+  .show_other_ways {
+    gap: 4px;
+  }
+
+  .show_other_ways hr {
+    width: 50px;
+  }
+}
+
+.socialsLogin {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.socialsLogin>* {
+  width: fit-content;
+}
+
+.google-button {
+  width: 100px !important;
+  background-color: transparent !important;
+}
+
+.google-button button div,
+.google-button button,
+.kep-login-facebook {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.socialsLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socialsLogin * {
+  font-size: 30px;
+}
+
+.kep-login-facebook:hover {
+  border-color: transparent !important;
+  /* background-color: transparent; */
+  /* color: #45a2c4; */
+}

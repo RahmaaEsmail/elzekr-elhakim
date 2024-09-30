@@ -1,0 +1,36 @@
+.setting {
+  /* display: none; */
+  position: fixed;
+  background-color: #439ec1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 10px;
+  bottom: 20px;
+  z-index: 500 !important;
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+  width: 400px !important;
+  /* top: 70px; */
+  z-index: 3232 !important;
+  padding-top: 50px;
+}
+
+
+.side_pages {
+  position: relative;
+}
+
+.MuiPaper-root {
+  padding-top: 60px;
+}
+
+.side_pages .close_img {
+  position: absolute;
+  top: 10px;
+  z-index: 999;
+  right: 10px;
+  width: 50px;
+  cursor: pointer;
+}
